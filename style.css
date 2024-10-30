@@ -60,6 +60,25 @@ section {
     color: #333;
 }
 
+/* Countdown Styling */
+#countdown {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+#countdown h3 {
+    font-size: 1.5em;
+    font-family: 'Great Vibes', cursive;
+    color: #555;
+}
+
+#time-remaining {
+    font-weight: bold;
+    color: #333;
+}
+
 /* RSVP Button Styling */
 #rsvp button {
     padding: 10px 20px;
