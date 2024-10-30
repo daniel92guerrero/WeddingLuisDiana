@@ -3,10 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitation</title>
+    <title>Your Invitation</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to the Event Invitation</h1>
-    <p>More details coming soon!</p>
+    <!-- Header Section -->
+    <header>
+        <h1>You're Invited!</h1>
+        <p>Join us to celebrate a special event.</p>
+    </header>
+
+    <!-- Event Details Section -->
+    <section id="event-details">
+        <h2>Event Details</h2>
+        <p><strong>Date:</strong> Saturday, December 25, 2024</p>
+        <p><strong>Time:</strong> 6:00 PM</p>
+        <p><strong>Location:</strong> 123 Celebration Ave, Party City</p>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp">
+        <h2>RSVP</h2>
+        <p>Please let us know if you can join by clicking below:</p>
+        <button onclick="confirmRSVP()">Confirm Attendance</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Thank you! We can't wait to celebrate with you!</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
