@@ -8,7 +8,8 @@ function confirmRSVP() {
 function startCountdown() {
     const eventDate = new Date("October 4, 2025 17:00:00").getTime();
 
-    setInterval(() => {
+    // Update the countdown every second
+    const countdownInterval = setInterval(() => {
         const now = new Date().getTime();
         const timeRemaining = eventDate - now;
 
