@@ -20,7 +20,7 @@ function startCountdown() {
 
         // Display the result
         document.getElementById("time-remaining").innerHTML = `
-            ${days} Days ${hours} Hours ${minutes} Minutes ${seconds} Seconds
+            ${Dias} Days ${horas} Hours ${minutos} Minutes ${segundos} Seconds
         `;
 
         // If countdown is over, display a message
