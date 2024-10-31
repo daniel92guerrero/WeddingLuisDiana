@@ -6,7 +6,7 @@ function confirmRSVP() {
 
 // Countdown Function
 function startCountdown() {
-    const eventDate = new Date("October 4, 2025 16:00:00").getTime();
+    const eventDate = new Date("October 4, 2025 17:00:00").getTime();
 
     setInterval(() => {
         const now = new Date().getTime();
