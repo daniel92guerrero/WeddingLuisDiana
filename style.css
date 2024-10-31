@@ -47,7 +47,7 @@ section {
     margin: 20px 0;
     max-width: 100%;
 }
-
+section {
 /* Event Details and RSVP Styling */
 #event-details h2, #rsvp h2, #middle-content h2 {
     font-family: 'Great Vibes', cursive;
@@ -61,6 +61,7 @@ section {
     color: #333;
 }
 
+section {
 /* Countdown Styling */
 #countdown {
     text-align: center;
