@@ -4,7 +4,6 @@ function confirmRSVP() {
     alert("Thank you for confirming your attendance! We look forward to celebrating with you!");
 }
 
-// Countdown Function
 function startCountdown() {
     const eventDate = new Date("October 4, 2025 17:00:00").getTime();
 
@@ -26,11 +25,8 @@ function startCountdown() {
 
         // If countdown is over, display a message
         if (timeRemaining < 0) {
-            clearInterval();
+            clearInterval(countdownInterval);  // Corrected line
             document.getElementById("time-remaining").innerHTML = "¡El día ha llegado!";
         }
     }, 1000);
 }
-
-// Start the countdown on page load
-window.onload = startCountdown;
