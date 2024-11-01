@@ -44,7 +44,7 @@ section {
 /*     max-width: 100%; */
     border-radius: 12px;
     margin: 20px 0;
-    max-width: 300px;
+    max-width: 90%;
     height: auto;
 }
 
@@ -82,12 +82,12 @@ section {
 }
 
 #middle-photo-2 img {
-  max-width: 100px; /* Ensures the image doesn't exceed its container's width */
-  height: auto; /* Maintains aspect ratio */
+    max-width: 90%; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Maintains aspect ratio */
 }
 #middle-photo-3 img {
-  max-width: 100px; /* Ensures the image doesn't exceed its container's width */
-  height: auto; /* Maintains aspect ratio */
+    max-width: 90%; /* Ensures the image doesn't exceed its container's width */
+    height: auto; /* Maintains aspect ratio */
 }
 
 /* RSVP Button Styling */
