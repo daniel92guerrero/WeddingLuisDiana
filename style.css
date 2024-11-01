@@ -82,11 +82,11 @@ section {
 }
 
 #middle-photo-2 img {
-  max-width: 300px; /* Ensures the image doesn't exceed its container's width */
+  max-width: 100px; /* Ensures the image doesn't exceed its container's width */
   height: auto; /* Maintains aspect ratio */
 }
 #middle-photo-3 img {
-  max-width: 300px; /* Ensures the image doesn't exceed its container's width */
+  max-width: 100px; /* Ensures the image doesn't exceed its container's width */
   height: auto; /* Maintains aspect ratio */
 }
 
