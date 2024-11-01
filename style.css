@@ -41,7 +41,7 @@ section {
 
 /* Top, Middle, and Bottom Image Styling */
 #top-image img, #middle-content img, #bottom-image img {
-    max-width: 100%;
+    --max-width: 100%;
     border-radius: 12px;
     margin: 20px 0;
     max-width: 300px;
