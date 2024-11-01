@@ -81,6 +81,15 @@ section {
     color: #555;
 }
 
+#middle-photo-2 img {
+  max-width: 300px; /* Ensures the image doesn't exceed its container's width */
+  height: auto; /* Maintains aspect ratio */
+}
+#middle-photo-3 img {
+  max-width: 300px; /* Ensures the image doesn't exceed its container's width */
+  height: auto; /* Maintains aspect ratio */
+}
+
 /* RSVP Button Styling */
 #rsvp button {
     padding: 10px 20px;
