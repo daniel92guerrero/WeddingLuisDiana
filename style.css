@@ -9,7 +9,7 @@ body {
 header {
     text-align: center;
     padding: 40px;
-    background: url('images/background.jpg') no-repeat center center fixed;
+    /* background: url('images/background.jpg') no-repeat center center fixed; */
     background-size: cover;
     color: white;
 }
@@ -81,15 +81,12 @@ section {
     color: #555;
 }
 
-#middle-photo-2 img {
-    object-fit: cover;
-    max-width: 90%; /* Ensures the image doesn't exceed its container's width */
-    height: auto; /* Maintains aspect ratio */
-}
-#middle-photo-3 img {
-    object-fit: cover;
-    max-width: 90%; /* Ensures the image doesn't exceed its container's width */
-    height: auto; /* Maintains aspect ratio */
+#middle-photo-2 img , #middle-photo-3 img {
+    display: block;
+    max-width: 90%;
+    margin: 20px auto;
+    height: auto;
+    border-radius: 12px;
 }
 
 /* RSVP Button Styling */
