@@ -42,22 +42,22 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#SavetheDate h2 {
-    font-family: 'Neonderthaw', cursive;
-    color: #555;
-    font-style: normal;
-    font-size: 3em;
-    margin-bottom: 10px;
-}
+#SavetheDate h2  {
+        font-family: 'Neonderthaw', cursive;
+        color: #555;
+        font-style: normal;
+        font-size: 3 em;
+        margin-bottom: 10px;
+    }
 /* Top, Middle, and Bottom Image Styling */
 /* #top-image img, #middle-content img, #bottom-image img { */
-#middle-content img {
+/* #middle-content img { */
 /*     max-width: 100%; */
-    border-radius: 12px;
+    /* border-radius: 12px;
     margin: 20px 0;
     max-width: 90%;
-    height: auto;
-}
+    height: auto; */
+/* } */
 
 /* Event Details and RSVP Styling */
 #event-details-Ceremony h2,
@@ -97,9 +97,9 @@ section {
 }
 
 #middle-photo-2 img , #middle-photo-3 img {
-    display: block;
+    display: flex;
     max-width: 90%;
-    margin: 20px auto;
+    margin: 20px;
     height: auto;
     border-radius: 12px;
 }
