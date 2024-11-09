@@ -42,7 +42,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#savethedate h2 {
+#SavetheDate h2 {
     font-family: 'Neonderthaw', cursive;
     color: #555;
     font-style: normal;
@@ -65,8 +65,8 @@ section {
 #gifts-content h2, 
 #event-details h2, 
 #rsvp h2, 
-#middle-content h2
-#bottom-text h2 
+#middle-content h2,
+#bottom-text h2, 
 #music h2
  {
     font-family: 'Neonderthaw', cursive;
