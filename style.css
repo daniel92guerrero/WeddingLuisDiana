@@ -42,7 +42,7 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#savethedate h1 {
+#savethedate h2 {
     font-family: 'Neonderthaw', cursive;
     color: #555;
     font-style: normal;
@@ -60,7 +60,15 @@ section {
 }
 
 /* Event Details and RSVP Styling */
-#event-details h2, #rsvp h2, #middle-content h2 {
+#event-details-Ceremony h2,
+#event-countdown h2,
+#gifts-content h2, 
+#event-details h2, 
+#rsvp h2, 
+#middle-content h2
+#bottom-text h2 
+#music h2
+ {
     font-family: 'Neonderthaw', cursive;
     color: #555;
     font-style: normal;
@@ -73,23 +81,16 @@ section {
     color: #333;
 }
 
-/* Countdown Styling */
-#countdown {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.2em;
-    color: #444;
-}
-
+/* 
 #countdown h2 {
     font-size: 1.5em;
     font-family: 'Neonderthaw', cursive;
     
     color: #555;
-}
+} */
 
 #time-remaining {
-    font-size: 1.5em;
+    font-size: 1.1em;
     font-weight: bold;
     color: #555;
 }
@@ -118,13 +119,6 @@ section {
     background-color: #218838;
 }
 
-#bottom-text h2 {
-    font-family: 'Neonderthaw', cursive;
-    color: #555;
-    font-style: normal;
-    font-size: 3em;
-    margin-bottom: 10px;
-}
 
 /* Footer Styling */
 footer {
