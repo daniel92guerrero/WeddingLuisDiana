@@ -48,7 +48,7 @@ section {
     font-style: normal;
     font-size: 3em;
     margin-bottom: 10px;
-
+}
 /* Top, Middle, and Bottom Image Styling */
 #top-image img, #middle-content img, #bottom-image img {
 /*     max-width: 100%; */
@@ -80,7 +80,7 @@ section {
     color: #444;
 }
 
-#countdown h3 {
+#countdown h2 {
     font-size: 1.5em;
     font-family: 'Neonderthaw', cursive;
     
