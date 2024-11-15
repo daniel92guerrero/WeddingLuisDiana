@@ -1,6 +1,9 @@
 /* General Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
     color: #333;
     background: #f4f4f4;
 }
