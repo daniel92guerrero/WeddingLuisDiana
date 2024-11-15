@@ -108,7 +108,7 @@ section {
 }
 
 #middle-photo-2 img , #middle-photo-3 img {
-    display: flex;
+    display: block;
     max-width: 90%;
     margin: 20px;
     height: auto;
