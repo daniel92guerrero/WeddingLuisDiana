@@ -42,11 +42,12 @@ section {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#SavetheDate h2  {
+#SavetheDate h2 
+ {
         font-family: 'Neonderthaw', cursive;
         color: #555;
         font-style: normal;
-        font-size: 2.0em;
+        font-size: 2.2em;
         margin-bottom: 10px;
         align-content: center;
     }
@@ -59,6 +60,15 @@ section {
     max-width: 90%;
     height: auto; */
 /* } */
+
+/* Top, Middle, and Bottom Image Styling */
+#top-image img, #middle-content img, #bottom-image img {
+    max-width: 100%; /* ensures images do not exceed container width */
+    width: auto; /* allows images to scale proportionally */
+    height: auto; /* maintains aspect ratio */
+    border-radius: 12px;
+    margin: 20px 0;
+}
 
 /* Event Details and RSVP Styling */
 #event-details-Ceremony h2,
