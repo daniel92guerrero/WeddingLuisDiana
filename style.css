@@ -8,7 +8,7 @@ body {
 /* Header Styling with Background Image */
 header {
     text-align: center;
-    padding: 40px;
+    padding: 10px;
     /* background: url('images/background.jpg') no-repeat center center fixed; */
     background-size: cover;
     background-color: black;
@@ -51,23 +51,15 @@ section {
         margin-bottom: 10px;
         align-content: center;
     }
-/* Top, Middle, and Bottom Image Styling */
-/* #top-image img, #middle-content img, #bottom-image img { */
-/* #middle-content img { */
-/*     max-width: 100%; */
-    /* border-radius: 12px;
-    margin: 20px 0;
-    max-width: 90%;
-    height: auto; */
-/* } */
+
 
 /* Top, Middle, and Bottom Image Styling */
 #top-image img, #middle-content img, #bottom-image img {
     max-width: 100%; /* ensures images do not exceed container width */
     width: auto; /* allows images to scale proportionally */
     height: auto; /* maintains aspect ratio */
-    border-radius: 12px;
-    margin: 10px 0;
+    border-radius: 4px;
+    margin: 2px 0;
 }
 
 /* Event Details and RSVP Styling */
