@@ -11,7 +11,7 @@ body {
 /* Header Styling with Background Image */
 header {
     text-align: center;
-    padding: 10px;
+    padding: 20px;
     /* background: url('images/background.jpg') no-repeat center center fixed; */
     background-size: cover;
     background-color: black;
@@ -22,7 +22,7 @@ header h1 {
     font-family: 'Neonderthaw', cursive;
     font-style: normal;
     font-size: 4em;
-    color: #fff;
+    color: #D4AF37;
 }
 
 header p {
@@ -41,7 +41,7 @@ section {
     width: 90%;
     /* max-width: 300px; */
     background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,7 +51,7 @@ section {
         color: #555;
         font-style: normal;
         font-size: 2.2em;
-        margin-bottom: 10px;
+        margin-bottom: 10px auto;
         align-content: center;
     }
 
@@ -61,7 +61,7 @@ section {
     max-width: 100%; /* ensures images do not exceed container width */
     width: auto; /* allows images to scale proportionally */
     height: auto; /* maintains aspect ratio */
-    border-radius: 4px;
+    border-radius: 12px;
     margin: 2px 0;
 }
 
@@ -107,7 +107,7 @@ section {
     max-width: 90%;
     margin: 5px;
     height: auto;
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
 /* RSVP Button Styling */
