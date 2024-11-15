@@ -67,7 +67,7 @@ section {
     width: auto; /* allows images to scale proportionally */
     height: auto; /* maintains aspect ratio */
     border-radius: 12px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 /* Event Details and RSVP Styling */
@@ -112,7 +112,7 @@ section {
     max-width: 90%;
     margin: 5px;
     height: auto;
-    border-radius: 12px;
+    border-radius: 4px;
 }
 
 /* RSVP Button Styling */
