@@ -19,15 +19,11 @@ header {
 }
 
 header h1 {
-    font-family: "Neonderthaw", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #ffffff;
-}
-
-header p {
-    font-size: 1.1em;
-    margin-top: 10px;
+    
+        font-family: "Neonderthaw", serif;
+        font-weight: 400;
+        font-style: normal;
+    
 }
 
 
@@ -47,7 +43,7 @@ section {
 
 #SavetheDate h2 
  {
-        font-family: "Neonderthaw", serif;
+        font-family: "Neonderthaw", cursive;
         font-weight: 400;
         font-style: normal;
         color: #555;
@@ -71,13 +67,18 @@ section {
 {
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
     color: #333;
     background: #f4f4f4;
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    display: block;
+    max-width: 90%;
+    height: auto;
+    border-radius: 12px;
+
 }
-
-
 
 
 /* Event Details and RSVP Styling */
