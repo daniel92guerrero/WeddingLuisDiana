@@ -28,6 +28,8 @@ header h1 {
     letter-spacing: 2px; /* Adds spacing between letters for better readability */
     text-transform: uppercase; /* Makes the text more formal and bold */
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Adds shadow for depth and prominence */
+    line-height: 1.3; /* Reduced line height */
+
 }
 
 /* Section Styling */
@@ -42,6 +44,8 @@ section {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.3; /* Reduced line height */
+
 }
 
 section h2 {
