@@ -122,6 +122,60 @@ section img {
     text-align: center;
 }
 
+/* Note Section Styling */
+#wedding-note {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#wedding-note h2 {
+    font-family: "Neonderthaw", cursive;
+    font-size: 2.2em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#wedding-note p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#wedding-note textarea {
+    width: 90%;
+    max-width: 750px;
+    font-family: "Nunito", sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+#wedding-note button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#wedding-note button:hover {
+    background-color: #218838;
+}
+
+
 /* RSVP Button Styling */
 #rsvp button {
     padding: 10px 20px;
@@ -137,6 +191,39 @@ section img {
 
 #rsvp button:hover {
     background-color: #218838;
+}
+
+/* RSVP Name Fields Styling */
+#rsvp input {
+    display: block;
+    width: 90%;
+    max-width: 750px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* WhatsApp Button Styling */
+#whatsapp-rsvp {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#whatsapp-button button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #25D366; /* WhatsApp green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#whatsapp-button button:hover {
+    background-color: #1EBE5D;
 }
 
 /* Footer Styling */

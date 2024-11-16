@@ -125,18 +125,36 @@ function openMaps() {
         <img src="images/middle-photo-3.jpg" alt="Bottom Photo">
     </section>
     
+    <section id="wedding-note">
+        <h2>Déjanos un Mensaje</h2>
+        <p>Nos encantaría leer tus palabras y buenos deseos.</p>
+        <textarea id="wedding-note-box" placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+        <button id="submit-note" onclick="submitNote()">Enviar Mensaje</button>
+    </section>
+
+
+
     <!-- RSVP Section -->
     <section id="rsvp">
         <h2>RSVP</h2>
-        <p>Favor de Confirmar tu asistencia:</p>
-        <button onclick="confirmRSVP()">Confirmo Asistencia</button>
+        <p>Favor de confirmar tu asistencia:</p>
+        <input type="text" id="rsvp-name" placeholder="Nombre">
+        <input type="text" id="rsvp-lastname" placeholder="Apellido">
+        <button id="rsvp-confirm" onclick="sendRSVP()">Confirmar Asistencia</button>
     </section>
-
     <!-- Bottom Image Section
     <section id="bottom-image">
         <img src="images/bottom-photo.jpg" alt="Bottom Photo">
     </section> -->
     
+    <section id="whatsapp-rsvp">
+        <p>También puedes confirmar tu asistencia por WhatsApp:</p>
+        <a id="whatsapp-button" href="https://wa.me/16027024416?text=Hola,%20confirmo%20mi%20asistencia%20a%20la%20boda!" target="_blank">
+            <button>Confirmar por WhatsApp</button>
+        </a>
+    </section>
+
+
     <!--- Song -->
     <section id="music">
         <h2>Nuestra Cancion</h2>

@@ -4,6 +4,28 @@ function confirmRSVP() {
     alert("Thank you for confirming your attendance! We look forward to celebrating with you!");
 }
 
+function submitNote() {
+    const note = document.getElementById("wedding-note-box").value;
+    if (note.trim()) {
+        alert("Gracias por tu mensaje: " + note);
+        document.getElementById("wedding-note-box").value = ""; // Clear the box
+    } else {
+        alert("Por favor escribe un mensaje antes de enviarlo.");
+    }
+}
+
+function sendRSVP() {
+    const name = document.getElementById("rsvp-name").value.trim();
+    const lastname = document.getElementById("rsvp-lastname").value.trim();
+    if (name && lastname) {
+        alert(`Gracias por confirmar, ${name} ${lastname}!`);
+        document.getElementById("rsvp-name").value = "";
+        document.getElementById("rsvp-lastname").value = "";
+    } else {
+        alert("Por favor completa ambos campos antes de confirmar.");
+    }
+}
+
 function startCountdown() {
     console.log("Countdown function initiated");
     const eventDate = new Date("October 4, 2025 17:00:00").getTime();
