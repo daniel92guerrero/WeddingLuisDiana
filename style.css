@@ -1,154 +1,135 @@
 /* General Body Styling */
 body {
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     color: #333;
     background: #f4f4f4;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header Styling with Background Image */
+/* Header Styling */
 header {
     text-align: center;
-    padding: 20px;
-    /* background: url('images/background.jpg') no-repeat center center fixed; */
-    background-size: cover;
+    padding: 40px 20px;
     background-color: black;
     color: #ffffff;
 }
 
 header h1 {
-    
-        font-family: "Neonderthaw", serif;
-        font-weight: 400;
-        font-style: normal;
-    
+    font-family: "Neonderthaw", cursive;
+    font-size: 3em;
+    font-weight: 400;
+    margin: 0;
 }
-
 
 /* Section Styling */
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
-    margin: 10px auto;
+    padding: 20px;
+    margin: 20px auto;
     width: 90%;
-    /* max-width: 300px; */
+    max-width: 800px; /* Keeps sections from stretching too wide */
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#SavetheDate h2 
- {
-        font-family: "Neonderthaw", cursive;
-        font-weight: 400;
-        font-style: normal;
-        color: #555;
-        font-size: 2.2em;
-        margin-bottom: 10px auto;
-        align-content: center;
-    }
-
-
-/* Top, Middle, and Bottom Image Styling */
-#top-image img, #middle-content img, #bottom-image img {
-    max-width: 100%; /* ensures images do not exceed container width */
-    width: auto; /* allows images to scale proportionally */
-    height: auto; /* maintains aspect ratio */
-    border-radius: 12px;
-    margin: 2px 0;
+section h2 {
+    font-family: "Neonderthaw", cursive;
+    font-size: 2em;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
-
-#Program h3
-{
+section p {
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+    font-size: 1.2em;
+    font-weight: 300;
     color: #333;
-    background: #f4f4f4;
-    font-size: 1.8em;
-    margin-bottom: 5px;
-    display: block;
-    max-width: 90%;
+    margin: 10px 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Image Styling */
+section img {
+    max-width: 100%; /* Images scale responsively */
     height: auto;
     border-radius: 12px;
-
+    margin: 10px 0;
 }
 
+/* Specific Section Styling */
+#SavetheDate h2 {
+    color: #333;
+    font-size: 2.5em;
+}
 
-/* Event Details and RSVP Styling */
-#event-details-Ceremony h2,
-#event-countdown h2,
-#gifts-content h2, 
-#event-details h2,
-#accommodation-details h2, 
-#rsvp h2, 
-#middle-content h2,
-#music h2,
-#bottom-text h2
- {
-    font-family: 'Neonderthaw', cursive;
-    color: #555;
-    font-style: normal;
+#Program h3 {
+    font-family: "Nunito", sans-serif;
     font-size: 1.8em;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#Program p {
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-#accommodation-details p, #rsvp p, #middle-content p , #Program p {
-    font-size: 1.2em;
-    color: #333;
-}
-
-/* 
-#countdown h2 {
-    font-size: 1.5em;
-    font-family: 'Neonderthaw', cursive;
-    
-    color: #555;
-} */
-
+/* Countdown Styling */
 #time-remaining {
-    font-size: 1.1em;
+    font-size: 1.5em;
     font-weight: bold;
     color: #555;
-}
-
-#middle-photo-2 img , #middle-photo-3 img {
-    display: block;
-    max-width: 90%;
-    margin: 5px;
-    height: auto;
-    border-radius: 12px;
+    text-align: center;
 }
 
 /* RSVP Button Styling */
 #rsvp button {
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 1.2em;
+    font-weight: 400;
     color: #fff;
     background-color: #28a745;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 #rsvp button:hover {
     background-color: #218838;
 }
 
-
 /* Footer Styling */
 footer {
     text-align: center;
     padding: 20px;
-    color: #666;
     background-color: rgba(255, 255, 255, 0.8);
     border-top: 1px solid #ddd;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    section h2 {
+        font-size: 1.8em;
+    }
+    section p {
+        font-size: 1em;
+    }
+    #rsvp button {
+        font-size: 1em;
+    }
 }
