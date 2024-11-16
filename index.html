@@ -3,184 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Invitation</title>
+    <title>Your Wedding Invitation</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap'>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nunito:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header Section with Background Image -->
+    <!-- Header Section -->
     <header>
-        <h1><strong>Diana<br>&</br>Luis</strong></h1>
+        <h1>Diana & Luis</h1>
     </header>
 
+    <!-- Save the Date Section -->
     <section id="SavetheDate">
-        <h2>Save the Date</h2><h2><strong>Octubre 4 de 2025</strong></h2>
+        <h2>Save the Date</h2>
+        <h3>October 4, 2025</h3>
     </section>
-    
-    <!--Programa del Evento-->
+
+    <!-- Program Section -->
     <section id="Program">
-        <h2>Programa</h2>
-        <h3><strong class="time">17:30</strong></h3>
+        <h2>Program</h2>
+        <h3><strong>5:30 PM</strong></h3>
         <p>Ceremonia Religiosa</p>
-        <p>Entrada de la Novia</p>
-        <h3><strong class="time">19:00</strong></h3>
-        <p>Recepcion en Jardin</p>
-        <p>Cockteleria></p>
-        <h3><strong class="time">19:45</strong></h3>
-        <p>Ceremonia Civil</strong></p>
-        <h3><strong class="time">20:30</strong></h3>
-        <p>Cena</strong></p>
-        <h3><strong class="time">21:30</strong></h3>
-        <p>Brindis</p>
-        <p>Primer Baile</p>
-        <p>Baile con los Padres</p>
-        <p>Pastel</p>
-        <p>Baile</p>
-    </section>
-
-
-
-
-    <!-- Event Details Section -->
-    <section id="event-details-Ceremony">
-        <h2>Ceremonia</h2>
-        
-        <h3><strong>Parroquia Santa Elena de la Cruz</strong> </h3>
-        <p><strong>Hora:</strong> 5:30 PM </p>
-        <p><strong>Direccion:</strong> </p>
-        <p>Blvd.  Real del Arco y Calle Parroquia 
-            Col. Villa Satelite, Hermosíllo, Sonora</p>
-        <p><strong>Como llegar</strong></p>
-        <button onclick="openMaps()" 
-        style="padding: 10px 20px; color: #fff; background-color: #28a745; border: none; border-radius: 5px; font-size: 1em; cursor: pointer;">
-    Abrir en Google Maps
-</button>
-</section>
-
-<script>
-function openMaps() {
-    // Open Google Maps URL for the specified location
-    window.open("https://www.google.com/maps/search/?api=1&query=Parroquia+Santa+Elena+de+la+Cruz,+Hermosillo,+Sonora", "_blank");
-}
-</script>
-
+        <h3><strong>7:00 PM</strong></h3>
+        <p>Recepción en el Jardín</p>
+        <h3><strong>8:30 PM</strong></h3>
+        <p>Cena y Baile</p>
     </section>
 
     <!-- Event Details Section -->
     <section id="event-details">
-        <h2>Let's Dance</h2>
-        <h3><strong>Rose Garden</strong></h3>
-        <p><strong>Hora:</strong> 7:00 PM</p>
-        <p><strong>Direccion:</strong></p> 
-        <p> Navojoa final #106 Bagotes, Calle Uno, 83177 Hermosillo, Sonora</p>
-        <p><strong>Como llegar</strong></p>
-
-        <button onclick="openMaps()" 
-            style="padding: 10px 20px; color: #fff; background-color: #28a745; border: none; border-radius: 5px; font-size: 1em; cursor: pointer;">
-        Abrir en Google Maps
-    </button>
-</section>
-
-<script>
-    function openMaps() {
-        // Open Google Maps URL for the specified location
-        window.open("https://www.google.com/maps/search/?api=1&query=Rose+Garden+Hermosillo", "_blank");
-    }
-</script>
-        
-    </iframe>
-
-    </section>
-    
-    <!-- countdown -->
-    <section id="event-countdown"> 
-        <h2>Cuenta Regresiva</h2>
-        <!-- Countdown Display -->
-        <div id="countdown">
-            <p id="time-remaining">Loading...</p>
-        </div>
+        <h2>Ceremonia</h2>
+        <p><strong>Parroquia Santa Elena de la Cruz</strong></p>
+        <p><strong>5:30 PM</strong></p>
+        <button class="action-button" onclick="openMap('ceremony')">Abrir en Google Maps</button>
     </section>
 
-    <!-- mid 3 photo Image Section -->
-    <section id="middle-photo-2">
-        <img src="images/middle-photo-2.jpg" alt="Bottom Photo">
+    <section id="event-details-reception">
+        <h2>Recepción</h2>
+        <p><strong>Rose Garden</strong></p>
+        <p><strong>7:00 PM</strong></p>
+        <button class="action-button" onclick="openMap('reception')">Abrir en Google Maps</button>
     </section>
-    
-    <!-- Mesa de Regalos -->
-    <section id="gifts-content">
-        <h2>Mesa de Regalos</h2>
-        <p>¡Queremos compartir nuestra felicidad contigo! Ayúdanos a crear recuerdos inolvidables con tu regalo.</p>
-        <p>Amazon Shopping Cart</p>
-        <p>Cuenta CitiBanamex </p>
-    </section>
-    
-    <!-- Middle Image Section -->
-    <section id="accommodation-details">
-        <h2>Detalles Adicionales</h2>
-        <p>Disfruta con nosotros de una velada llena de amor y alegría.</p>
-    </section>
-    
-   <!-- mid 3 photo Image Section -->
-    <section id="middle-photo-3">
-        <img src="images/middle-photo-3.jpg" alt="Bottom Photo">
-    </section>
-    
-    <section id="wedding-note">
-        <h2>Déjanos un Mensaje</h2>
-        <p>Nos encantaría leer tus palabras y buenos deseos.</p>
-        <textarea id="wedding-note-box" placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
-        <button id="submit-note" onclick="submitNote()">Enviar Mensaje</button>
-    </section>
-
-
 
     <!-- RSVP Section -->
     <section id="rsvp">
         <h2>RSVP</h2>
-        <p>Favor de confirmar tu asistencia:</p>
-        <input type="text" id="rsvp-name" placeholder="Nombre">
-        <input type="text" id="rsvp-lastname" placeholder="Apellido">
-        <button id="rsvp-confirm" onclick="sendRSVP()">Confirmar Asistencia</button>
-    </section>
-    <!-- Bottom Image Section
-    <section id="bottom-image">
-        <img src="images/bottom-photo.jpg" alt="Bottom Photo">
-    </section> -->
-    
-    <section id="whatsapp-rsvp">
-        <p>También puedes confirmar tu asistencia por WhatsApp:</p>
-        <a id="whatsapp-button" href="https://wa.me/16027024416?text=Hola,%20confirmo%20mi%20asistencia%20a%20la%20boda!" target="_blank">
-            <button>Confirmar por WhatsApp</button>
-        </a>
+        <p>Confirma tu asistencia:</p>
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Apellido">
+        <button class="action-button">Confirmar</button>
+        <p>O confirma por WhatsApp:</p>
+        <a href="https://wa.me/16027024416" target="_blank" class="action-button">WhatsApp</a>
     </section>
 
-
-    <!--- Song -->
-    <section id="music">
-        <h2>Nuestra Cancion</h2>
-        <p>"Marry You" by Bruno Mars</p>
-        <iframe src="https://open.spotify.com/embed/track/6SKwQghsR8AISlxhcwyA9R" 
-                width="300" 
-                height="80" 
-                frameborder="0" 
-                allowtransparency="true" 
-                allow="encrypted-media"> 
-        </iframe>
+    <!-- Image Section -->
+    <section class="photo-section">
+        <img src="placeholder.jpg" alt="Placeholder for Wedding Photos">
     </section>
 
-    <section id="bottom-text">
-        <h2>Agradecimientos</h2>
-        <p>Nos encantara celebrar contigo!</p>
+    <!-- Countdown Section -->
+    <section id="countdown">
+        <h2>Cuenta Regresiva</h2>
+        <p id="time-remaining">Loading...</p>
     </section>
-    
-    <!-- Footer Section -->
+
+    <!-- Gifts Section -->
+    <section id="gifts">
+        <h2>Mesa de Regalos</h2>
+        <p>Contribuye a nuestra felicidad:</p>
+        <ul>
+            <li>Amazon Wishlist</li>
+            <li>Cuenta CitiBanamex</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        
-        <p>I am yours, and you are mine, from this day until our last</p>
-
+        <p>"I am yours, and you are mine, from this day until our last."</p>
     </footer>
 
-    <script src="script.js"></script>
-</script>
+    <script>
+        function openMap(location) {
+            const urls = {
+                ceremony: "https://www.google.com/maps/search/?api=1&query=Parroquia+Santa+Elena+de+la+Cruz",
+                reception: "https://www.google.com/maps/search/?api=1&query=Rose+Garden+Hermosillo"
+            };
+            window.open(urls[location], "_blank");
+        }
+    </script>
 </body>
 </html>

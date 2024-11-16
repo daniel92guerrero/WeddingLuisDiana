@@ -1,253 +1,73 @@
-/* General Body Styling */
+=/* General Body Styling */
 body {
     font-family: "Nunito", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    color: #333;
-    background: #f4f4f4;
     margin: 0;
     padding: 0;
+    background: #f9f9f9;
+    color: #333;
 }
 
 /* Header Styling */
 header {
+    background: black;
+    color: gold;
     text-align: center;
-    padding: 40px 20px;
-    background-color: black;
-    color: #ffffff;
+    padding: 50px 20px;
 }
 
 header h1 {
-    font-family: "Neonderthaw", cursive;
+    font-family: "Great Vibes", cursive;
     font-size: 4em;
-    font-weight: 400;
     margin: 0;
 }
 
 /* Section Styling */
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding: 20px;
     margin: 20px auto;
     width: 90%;
-    max-width: 800px; /* Keeps sections from stretching too wide */
-    background-color: rgba(255, 255, 255, 0.9);
+    max-width: 800px;
+    background: white;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    font-family: "Neonderthaw", cursive;
-    font-size: 2em;
-    font-weight: 400;
-    color: #555;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
-section p {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.2em;
-    font-weight: 300;
-    color: #333;
-    margin: 10px 0;
-    line-height: 1.6;
-    text-align: center;
-}
-
-/* Image Styling */
-section img {
-    max-width: 100%; /* Images scale responsively */
-    height: auto;
-    border-radius: 12px;
-    margin: 10px 0;
-}
-
-/* Specific Section Styling */
-#SavetheDate h2 {
-    color: #333;
+    font-family: "Great Vibes", cursive;
+    color: black;
     font-size: 2.5em;
+    margin-bottom: 10px;
 }
-/* Program Section Styling */
-#Program {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    width: 90%;
+
+/* Action Buttons */
+.action-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: black;
+    background: gold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.action-button:hover {
+    background: black;
+    color: gold;
+}
+
+/* Image Section */
+.photo-section img {
+    width: 100%;
     max-width: 800px;
-    background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
-#Program h2 {
-    font-family: "Neonderthaw", cursive;
-    font-size: 2.2em;
-    font-weight: 400;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-#Program h3 {
-    font-family: "Nunito", sans-serif;
-    font-size: 1.8em;
-    font-weight: 700; /* Bold for emphasis */
-    color: #333;
-    margin-bottom: 5px;
-}
-
-#Program p {
-    font-family: "Nunito", sans-serif;
-    font-size: 1em; /* Smaller size for content */
-    font-weight: 300; /* Lighter weight */
-    color: #333;
-    margin: 5px 0; /* Compact spacing */
-    line-height: 1.3; /* Reduced line height */
-}
-
-#Program .time {
-    font-size: 1.8em; /* Larger size for hours */
-    font-weight: 700; /* Bold for emphasis */
-    color: #333;
-    margin: 5px 0;
-}
-
-/* Countdown Styling */
-#time-remaining {
+/* Countdown */
+#countdown p {
     font-size: 1.5em;
     font-weight: bold;
-    color: #555;
-    text-align: center;
-}
-
-/* Note Section Styling */
-#wedding-note {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 800px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-#wedding-note h2 {
-    font-family: "Neonderthaw", cursive;
-    font-size: 2.2em;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-#wedding-note p {
-    font-family: "Nunito", sans-serif;
-    font-size: 1em;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-#wedding-note textarea {
-    width: 90%;
-    max-width: 750px;
-    font-family: "Nunito", sans-serif;
-    font-size: 1em;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    resize: vertical;
-    margin-bottom: 10px;
-}
-
-#wedding-note button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #28a745;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#wedding-note button:hover {
-    background-color: #218838;
-}
-
-
-/* RSVP Button Styling */
-#rsvp button {
-    padding: 10px 20px;
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #fff;
-    background-color: #28a745;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#rsvp button:hover {
-    background-color: #218838;
-}
-
-/* RSVP Name Fields Styling */
-#rsvp input {
-    display: block;
-    width: 90%;
-    max-width: 750px;
-    margin: 10px auto;
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* WhatsApp Button Styling */
-#whatsapp-rsvp {
-    text-align: center;
-    margin-top: 10px;
-}
-
-#whatsapp-button button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #25D366; /* WhatsApp green */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#whatsapp-button button:hover {
-    background-color: #1EBE5D;
-}
-
-/* Footer Styling */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-top: 1px solid #ddd;
-    font-size: 1.2em;
-    color: #666;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2.5em;
-    }
-    section h2 {
-        font-size: 1.8em;
-    }
-    section p {
-        font-size: 1em;
-    }
-    #rsvp button {
-        font-size: 1em;
-    }
 }
