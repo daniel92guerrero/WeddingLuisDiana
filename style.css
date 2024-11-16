@@ -15,14 +15,14 @@ header {
     /* background: url('images/background.jpg') no-repeat center center fixed; */
     background-size: cover;
     background-color: black;
-    color: #D4AF37;
+    color: #ffffff;
 }
 
 header h1 {
-    font-family: 'Neonderthaw', cursive;
+    font-family: "Neonderthaw", serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 4em;
-    color: #D4AF37;
+    color: #ffffff;
 }
 
 header p {
@@ -47,9 +47,10 @@ section {
 
 #SavetheDate h2 
  {
-        font-family: 'Neonderthaw', cursive;
-        color: #555;
+        font-family: "Neonderthaw", serif;
+        font-weight: 400;
         font-style: normal;
+        color: #555;
         font-size: 2.2em;
         margin-bottom: 10px auto;
         align-content: center;
