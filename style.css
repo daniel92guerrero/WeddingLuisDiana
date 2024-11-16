@@ -179,10 +179,10 @@ section img {
 /* RSVP Button Styling */
 #rsvp button {
     padding: 10px 20px;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
     color: #fff;
-    background-color: #28a745;
+    background-color: #25D366;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -234,7 +234,7 @@ section img {
 /* Google Maps Button Styling */
 #google-maps-button {
     padding: 10px 20px;
-    font-size: 1.2em; /* Consistent size with other buttons */
+    font-size: 1em; /* Consistent size with other buttons */
     font-weight: 400;
     color: #fff; /* White text */
     background-color: #28a745; /* Green background (same as RSVP button) */
