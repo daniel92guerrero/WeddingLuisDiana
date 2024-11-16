@@ -66,6 +66,20 @@ section {
     margin: 2px 0;
 }
 
+
+#Program h3
+{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #333;
+    background: #f4f4f4;
+}
+
+
+
+
 /* Event Details and RSVP Styling */
 #event-details-Ceremony h2,
 #event-countdown h2,
@@ -84,7 +98,7 @@ section {
     margin-bottom: 10px;
 }
 
-#accommodation-details p, #rsvp p, #middle-content p {
+#accommodation-details p, #rsvp p, #middle-content p , #Program p {
     font-size: 1.2em;
     color: #333;
 }
