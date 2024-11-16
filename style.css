@@ -12,16 +12,22 @@ body {
 /* Header Styling */
 header {
     text-align: center;
-    padding: 40px 20px;
-    background-color: black;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #000000, #333333); /* Gradient for depth */
     color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for a floating effect */
+    border-bottom: 5px solid #25D366; /* Adds a touch of color at the bottom */
 }
 
+/* Header Title Styling */
 header h1 {
     font-family: "Neonderthaw", cursive;
-    font-size: 4em;
+    font-size: 4.5em; /* Slightly larger font size for more impact */
     font-weight: 400;
     margin: 0;
+    letter-spacing: 2px; /* Adds spacing between letters for better readability */
+    text-transform: uppercase; /* Makes the text more formal and bold */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5); /* Adds shadow for depth and prominence */
 }
 
 /* Section Styling */
@@ -176,54 +182,6 @@ section img {
 }
 
 
-/* RSVP Button Styling */
-#rsvp button {
-    padding: 10px 20px;
-    font-size: 1em;
-    font-weight: 400;
-    color: #fff;
-    background-color: #25D366;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-#rsvp button:hover {
-    background-color: #218838;
-}
-
-/* RSVP Section Styling */
-#rsvp {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 800px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* WhatsApp Button Styling inside RSVP Section */
-#whatsapp-rsvp {
-    margin-top: 20px;
-}
-
-#whatsapp-button button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: #fff;
-    background-color: #25D366; /* WhatsApp green */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-#whatsapp-button button:hover {
-    background-color: #1EBE5D;
-}
 
 /* Google Maps Button Styling */
 #google-maps {
@@ -248,6 +206,81 @@ section img {
     background-color: #218838; /* Darker green on hover, like RSVP button */
 }
 
+
+
+/* RSVP Section Styling */
+#rsvp {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures center alignment */
+}
+
+/* Input Box Styling */
+#rsvp input[type="text"],
+#rsvp input[type="phone"] {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+    padding: 15px; /* Increased height */
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Button Styling */
+#rsvp button,
+#whatsapp-button {
+    padding: 12px 24px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    background-color: #25D366;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Ensures space between the input and buttons */
+}
+
+/* Button Hover Effects */
+#rsvp button:hover,
+#whatsapp-button:hover {
+    background-color: #218838;
+}
+
+/* WhatsApp Button Styling */
+#whatsapp-rsvp {
+    margin-top: 20px;
+}
+
+/* RSVP Text Styling */
+#rsvp p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Input Box Focus Styling */
+#rsvp input[type="text"]:focus,
+#rsvp input[type="phone"]:focus {
+    outline: none;
+    border-color: #25D366;
+    box-shadow: 0 0 5px rgba(37, 211, 102, 0.5);
+}
+
+
+
+
+
 /* Footer Styling */
 footer {
     text-align: center;
@@ -257,6 +290,8 @@ footer {
     font-size: 1.2em;
     color: #666;
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
