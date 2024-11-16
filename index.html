@@ -42,19 +42,16 @@
 
 
     <!-- Event Details Section -->
-    <section id="event-details-Ceremony">
-        <h2>Ceremonia</h2>
-        
-        <h3><strong>Parroquia Santa Elena de la Cruz</strong> </h3>
-        <p><strong>Hora:</strong> 5:30 PM </p>
-        <p><strong>Direccion:</strong> </p>
-        <p>Blvd.  Real del Arco y Calle Parroquia 
-            Col. Villa Satelite, Hermosíllo, Sonora</p>
-        <p><strong>Como llegar</strong></p>
-        <button onclick="openMaps()" 
-        style="padding: 10px 20px; color: #fff; background-color: #28a745; border: none; border-radius: 5px; font-size: 1em; cursor: pointer;">
-    Abrir en Google Maps
-</button>
+<!-- Event Details Section -->
+<section id="event-details-Ceremony">
+    <h2>Ceremonia</h2>
+    <h3><strong>Parroquia Santa Elena de la Cruz</strong></h3>
+    <p><strong>Hora:</strong> 5:30 PM</p>
+    <p><strong>Direccion:</strong></p>
+    <p>Blvd. Real del Arco y Calle Parroquia 
+        Col. Villa Satelite, Hermosillo, Sonora</p>
+    <p><strong>Como llegar</strong></p>
+    <button id="google-maps-button" onclick="openMaps()">Abrir en Google Maps</button>
 </section>
 
 <script>
@@ -74,12 +71,9 @@ function openMaps() {
         <p><strong>Direccion:</strong></p> 
         <p> Navojoa final #106 Bagotes, Calle Uno, 83177 Hermosillo, Sonora</p>
         <p><strong>Como llegar</strong></p>
-
-        <button onclick="openMaps()" 
-            style="padding: 10px 20px; color: #fff; background-color: #28a745; border: none; border-radius: 5px; font-size: 1em; cursor: pointer;">
-        Abrir en Google Maps
-    </button>
-</section>
+    
+        <button id="google-maps-button" onclick="openMaps()">Abrir en Google Maps</button>
+    </section>
 
 <script>
     function openMaps() {
@@ -137,21 +131,18 @@ function openMaps() {
     <!-- RSVP Section -->
     <section id="rsvp">
         <h2>RSVP</h2>
-        <p>Favor de confirmar tu asistencia:</p>
-        <input type="text" id="rsvp-name" placeholder="Nombre">
-        <input type="text" id="rsvp-lastname" placeholder="Apellido">
-        <button id="rsvp-confirm" onclick="sendRSVP()">Confirmar Asistencia</button>
-    </section>
-    <!-- Bottom Image Section
-    <section id="bottom-image">
-        <img src="images/bottom-photo.jpg" alt="Bottom Photo">
-    </section> -->
-    
-    <section id="whatsapp-rsvp">
-        <p>También puedes confirmar tu asistencia por WhatsApp:</p>
-        <a id="whatsapp-button" href="https://wa.me/16027024416?text=Hola,%20confirmo%20mi%20asistencia%20a%20la%20boda!" target="_blank">
-            <button>Confirmar por WhatsApp</button>
-        </a>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Confirm RSVP</button>
+        </form>
+        
+        <!-- WhatsApp Confirmation Button -->
+        <div id="whatsapp-rsvp">
+            <button id="whatsapp-button">
+                RSVP via WhatsApp
+            </button>
+        </div>
     </section>
 
 
