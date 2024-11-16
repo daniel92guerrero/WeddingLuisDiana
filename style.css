@@ -1,73 +1,76 @@
-=/* General Body Styling */
+/* General Body Styling */
 body {
     font-family: "Nunito", sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background: #f8f9fa;
     color: #333;
 }
 
-/* Header Styling */
+/* Header */
 header {
-    background: black;
+    background: linear-gradient(45deg, #000, #444);
     color: gold;
     text-align: center;
     padding: 50px 20px;
 }
 
 header h1 {
-    font-family: "Great Vibes", cursive;
-    font-size: 4em;
+    font-family: "Neonderthaw", cursive;
+    font-size: 5em;
     margin: 0;
 }
 
 /* Section Styling */
 section {
-    text-align: center;
     padding: 20px;
     margin: 20px auto;
     width: 90%;
     max-width: 800px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-section h2 {
-    font-family: "Great Vibes", cursive;
-    color: black;
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-/* Action Buttons */
-.action-button {
-    padding: 10px 20px;
-    font-size: 1em;
-    color: black;
+/* Button Styles */
+button {
     background: gold;
+    color: black;
     border: none;
-    border-radius: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
     cursor: pointer;
-    margin: 5px;
-    text-decoration: none;
+    margin: 10px;
+    transition: background 0.3s;
 }
 
-.action-button:hover {
-    background: black;
+button:hover {
+    background: #333;
     color: gold;
 }
 
-/* Image Section */
-.photo-section img {
-    width: 100%;
-    max-width: 800px;
-    border-radius: 12px;
-    margin: 20px 0;
+/* RSVP and WhatsApp */
+#rsvp-whatsapp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
-/* Countdown */
-#countdown p {
-    font-size: 1.5em;
-    font-weight: bold;
+#rsvp-whatsapp input {
+    padding: 10px;
+    width: 80%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Placeholder Images */
+#photos img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-top: 20px;
 }
