@@ -13,10 +13,10 @@ body {
 header {
     text-align: center;
     padding: 50px 20px;
-    background: linear-gradient(135deg, #000000, #333333); /* Gradient for depth */
+    background: linear-gradient(135deg, #000000, #1b1b1b); /* Gradient for depth */
     color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for a floating effect */
-    border-bottom: 5px solid #25D366; /* Adds a touch of color at the bottom */
+    border-bottom: 5px solid #e4cf31f3; /* Adds a touch of color at the bottom */
 }
 
 /* Header Title Styling */
