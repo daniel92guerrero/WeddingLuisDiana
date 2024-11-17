@@ -291,8 +291,6 @@ footer {
     background: linear-gradient(135deg, #000000, #1b1b1b); /* Gradient for depth */
     color: #ffffff;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Subtle shadow for a floating effect */
-    border-top: 5px solid #21212034; /* Adds a touch of color at the bottom */
-
 }
 
 /* Responsive Design */
