@@ -30,7 +30,16 @@ header h1 {
     line-height: 1.3; /* Reduced line height */
 
 }
+/* Alternate Background Colors for Sections */
+section:nth-child(odd) {
+    background-color: #000000; /* Black background for odd sections */
+    color: #ffffff; /* White text for odd sections */
+}
 
+section:nth-child(even) {
+    background-color: #ffffff; /* White background for even sections */
+    color: #333; /* Black text for even sections */
+}
 /* Section Styling */
 section {
     display: flex;
