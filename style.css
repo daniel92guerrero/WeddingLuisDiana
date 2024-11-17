@@ -94,7 +94,7 @@ section img {
 
 #Program h2 {
     font-family: "Neonderthaw", cursive;
-    font-size: 2.2em;
+    font-size: 3em;
     font-weight: 400;
     color: #555;
     margin-bottom: 15px;
@@ -118,7 +118,7 @@ section img {
 }
 
 #Program .time {
-    font-size: 1.8em; /* Larger size for hours */
+    font-size: 1.2em; /* Larger size for hours */
     font-weight: 700; /* Bold for emphasis */
     color: #333;
     margin: 5px 0;
