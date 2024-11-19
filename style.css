@@ -227,7 +227,7 @@ section img {
 }
 
 /* Input Box Styling */
-#rsvp input[type="text"],
+#rsvp input[type="name"],
 #rsvp input[type="phone"] {
     width: 100%;
     max-width: 600px;
@@ -273,7 +273,7 @@ section img {
 }
 
 /* Input Box Focus Styling */
-#rsvp input[type="text"]:focus,
+#rsvp input[type="name"]:focus,
 #rsvp input[type="phone"]:focus {
     outline: none;
     border-color: #25D366;
