@@ -26,18 +26,24 @@ function sendRSVP() {
     }
 }
 
+// RSVP Form Submission to Google Sheets
 document.getElementById('submit').addEventListener('click', function (event) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent the form from submitting the traditional way
+
+    // Fetching values from the form
     const name = document.getElementById('name').value.trim();
     const phone = document.getElementById('phone').value.trim();
 
+    // Validate input
     if (!name || !phone) {
         alert("Por favor completa todos los campos.");
         return;
     }
 
+    // Google Apps Script URL
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzCLu8m-jnTIjpros4XaG4Z1gjb9Oi5eroFP6OMqCeVZiUNaA8VhuzemneBVroQt-bvbA/exec';
 
+    // Sending the data using fetch
     fetch(scriptURL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -46,7 +52,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
     .then(response => {
         if (response.ok) {
             alert('Gracias por confirmar tu asistencia!');
-            document.getElementById('rsvpForm').reset();
+            document.getElementById('rsvpForm').reset(); // Clear the form after submission
         } else {
             throw new Error('Hubo un problema al enviar tus datos.');
         }
