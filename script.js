@@ -26,7 +26,6 @@ function sendRSVP() {
     }
 }
 
-
 document.getElementById('submit').addEventListener('click', function (event) {
     event.preventDefault();
     const name = document.getElementById('name').value.trim();
@@ -54,6 +53,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
     })
     .catch(error => console.error('Error:', error));
 });
+
 
 
 
