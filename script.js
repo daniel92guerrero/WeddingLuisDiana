@@ -50,5 +50,37 @@ function startCountdown() {
     }, 1000);
 }
 
+
+document.getElementById('submitButton').addEventListener('click', function () {
+    // Get form data
+    const name = document.getElementById('name').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+
+    // Ensure fields are filled out
+    if (!name || !phone) {
+        alert("Por favor completa todos los campos.");
+        return;
+    }
+
+    // Google Apps Script Web App URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzZMLkYM4_OXlYPWYRFR3rub0ayoAf33g2Fu2eqc1VZqWEP6olmTP6IeuG6WCMY91KQhQ/exec';
+
+    // Send data to Google Sheets
+    fetch(scriptURL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, phone })
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Gracias por confirmar tu asistencia!');
+            document.getElementById('rsvpForm').reset();
+        } else {
+            throw new Error('Hubo un problema al enviar tus datos.');
+        }
+    })
+    .catch(error => console.error('Error:', error));
+});
+
 // Start the countdown on page load
 window.onload = startCountdown;
