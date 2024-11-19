@@ -273,7 +273,7 @@ section img {
 }
 
 /* Input Box Focus Styling */
-#rsvp input[type="name"]:focus,
+#rsvp input[type="text"]:focus,
 #rsvp input[type="phone"]:focus {
     outline: none;
     border-color: #25D366;
