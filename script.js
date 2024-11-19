@@ -1,8 +1,8 @@
 console.log("JavaScript file loaded");
 
-function confirmRSVP() {
-    alert("Thank you for confirming your attendance! We look forward to celebrating with you!");
-}
+// function confirmRSVP() {
+//     alert("Thank you for confirming your attendance! We look forward to celebrating with you!");
+// }
 
 function submitNote() {
     const note = document.getElementById("wedding-note-box").value;
@@ -14,17 +14,17 @@ function submitNote() {
     }
 }
 
-function sendRSVP() {
-    const name = document.getElementById("rsvp-name").value.trim();
-    const lastname = document.getElementById("rsvp-lastname").value.trim();
-    if (name && lastname) {
-        alert(`Gracias por confirmar, ${name} ${lastname}!`);
-        document.getElementById("rsvp-name").value = "";
-        document.getElementById("rsvp-lastname").value = "";
-    } else {
-        alert("Por favor completa ambos campos antes de confirmar.");
-    }
-}
+// function sendRSVP() {
+//     const name = document.getElementById("rsvp-name").value.trim();
+//     const lastname = document.getElementById("rsvp-lastname").value.trim();
+//     if (name && lastname) {
+//         alert(`Gracias por confirmar, ${name} ${lastname}!`);
+//         document.getElementById("rsvp-name").value = "";
+//         document.getElementById("rsvp-lastname").value = "";
+//     } else {
+//         alert("Por favor completa ambos campos antes de confirmar.");
+//     }
+// }
 
 // RSVP Form Submission to Google Sheets
 document.getElementById('submit').addEventListener('click', function (event) {
