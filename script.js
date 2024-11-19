@@ -75,7 +75,7 @@ document.getElementById('submitButton').addEventListener('click', function () {
         }
     })
     .catch(error => console.error('Error:', error));
-});
+})
 
 // Start the countdown on page load
 window.onload = startCountdown;
