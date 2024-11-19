@@ -60,7 +60,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
         return;
     }
 
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzZMLkYM4_OXlYPWYRFR3rub0ayoAf33g2Fu2eqc1VZqWEP6olmTP6IeuG6WCMY91KQhQ/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzCLu8m-jnTIjpros4XaG4Z1gjb9Oi5eroFP6OMqCeVZiUNaA8VhuzemneBVroQt-bvbA/exec';
 
     fetch(scriptURL, {
         method: 'POST',
