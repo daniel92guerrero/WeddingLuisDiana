@@ -50,22 +50,17 @@ function startCountdown() {
     }, 1000);
 }
 
-
 document.getElementById('submitButton').addEventListener('click', function () {
-    // Get form data
     const name = document.getElementById('name').value.trim();
     const phone = document.getElementById('phone').value.trim();
 
-    // Ensure fields are filled out
     if (!name || !phone) {
         alert("Por favor completa todos los campos.");
         return;
     }
 
-    // Google Apps Script Web App URL
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzZMLkYM4_OXlYPWYRFR3rub0ayoAf33g2Fu2eqc1VZqWEP6olmTP6IeuG6WCMY91KQhQ/exec';
 
-    // Send data to Google Sheets
     fetch(scriptURL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
