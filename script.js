@@ -26,40 +26,43 @@ function submitNote() {
 //     }
 // }
 
-// RSVP Form Submission to Google Sheets
+// Google sheet
 document.getElementById('submit').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
+    event.preventDefault(); // Prevent the default form submission
 
-    // Fetching values from the form
+    // Fetch values from the form
     const name = document.getElementById('name').value.trim();
     const phone = document.getElementById('phone').value.trim();
 
-    // Validate input
+    // Validate inputs
     if (!name || !phone) {
         alert("Por favor completa todos los campos.");
         return;
     }
 
-    // Google Apps Script URL
+    // Google Apps Script Web App URL
     const scriptURL = 'https://script.google.com/macros/s/AKfycbzCLu8m-jnTIjpros4XaG4Z1gjb9Oi5eroFP6OMqCeVZiUNaA8VhuzemneBVroQt-bvbA/exec';
 
-    // Sending the data using fetch
+    // Send the data to the Google Apps Script via POST
     fetch(scriptURL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, phone })
+        body: JSON.stringify({ name: name, phone: phone })
     })
-    .then(response => {
-        if (response.ok) {
+    .then(response => response.json()) // Parse the JSON response
+    .then(data => {
+        if (data.result === "success") {
             alert('Gracias por confirmar tu asistencia!');
-            document.getElementById('rsvpForm').reset(); // Clear the form after submission
+            document.getElementById('rsvpForm').reset(); // Reset the form after submission
         } else {
-            throw new Error('Hubo un problema al enviar tus datos.');
+            alert('Hubo un problema: ' + data.message);
         }
     })
-    .catch(error => console.error('Error:', error));
+    .catch(error => {
+        console.error('Error:', error);
+        alert('Hubo un error al enviar tus datos.');
+    });
 });
-
 
 // WhatsApp Button Action
 document.getElementById('whatsapp-button').addEventListener('click', function () {
