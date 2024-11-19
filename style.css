@@ -227,7 +227,7 @@ section img {
 }
 
 /* Input Box Styling */
-#rsvp input[type="name"],
+#rsvp input[type="text"],
 #rsvp input[type="phone"] {
     width: 100%;
     max-width: 600px;
