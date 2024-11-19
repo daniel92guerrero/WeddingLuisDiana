@@ -48,9 +48,10 @@ function startCountdown() {
             document.getElementById("time-remaining").innerHTML = "¡El día ha llegado!";
         }
     }, 1000);
-};
+}
 
-document.getElementById('submit').addEventListener('click', function () {
+document.getElementById('submit').addEventListener('click', function (event) {
+    event.preventDefault();
     const name = document.getElementById('name').value.trim();
     const phone = document.getElementById('phone').value.trim();
 
