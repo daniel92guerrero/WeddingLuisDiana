@@ -48,9 +48,9 @@ function startCountdown() {
             document.getElementById("time-remaining").innerHTML = "¡El día ha llegado!";
         }
     }, 1000);
-}
+};
 
-document.getElementById('submitButton').addEventListener('click', function () {
+document.getElementById('submit').addEventListener('click', function () {
     const name = document.getElementById('name').value.trim();
     const phone = document.getElementById('phone').value.trim();
 
@@ -75,7 +75,7 @@ document.getElementById('submitButton').addEventListener('click', function () {
         }
     })
     .catch(error => console.error('Error:', error));
-})
+});
 
 // Start the countdown on page load
 window.onload = startCountdown;
