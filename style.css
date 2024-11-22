@@ -10,7 +10,7 @@ body {
 }
 
 /* Header Styling */
-header :focus {
+header  {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(135deg, #000000, #1b1b1b); /* Gradient for depth */
