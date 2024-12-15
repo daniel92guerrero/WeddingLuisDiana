@@ -26,42 +26,42 @@ console.log("JavaScript file loaded");
 //     }
 // }
 
-// Google sheet
-document.getElementById('submit').addEventListener('click', function (event) {
-    event.preventDefault(); // Prevent the default form submission
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyGzlANAFRmsIu1Vm3tnVJfVtC28Oe1BBTv1utN9z8xoqQf9IPtqMSZPa_Ke4cW9RdEOA/exec';
 
-    // Fetch values from the form
+document.getElementById('submit').addEventListener('click', function (event) {
+    event.preventDefault();
+
     const name = document.getElementById('name').value.trim();
     const phone = document.getElementById('phone').value.trim();
 
-    // Validate inputs
     if (!name || !phone) {
         alert("Por favor completa todos los campos.");
         return;
     }
 
-    // Google Apps Script Web App URL
-    const scriptURL = "https://script.google.com/macros/s/AKfycbyGzlANAFRmsIu1Vm3tnVJfVtC28Oe1BBTv1utN9z8xoqQf9IPtqMSZPa_Ke4cW9RdEOA/exec"
-    // Send the data to the Google Apps Script via POST
+    console.log('Sending data:', { name, phone });
+
     fetch(scriptURL, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name: name, phone: phone })
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ name, phone }),
     })
-    .then(response => response.json())
-    .then(data => {
-        console.log('Response from server:', data); // For debugging
-        if (data.result === "success") {
-            alert('Gracias por confirmar tu asistencia!');
-            document.getElementById('rsvpForm').reset();
-        } else {
-            alert('Hubo un problema: ' + (data.message || 'Error desconocido.'));
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('Hubo un error al enviar tus datos.');
-    });
+        .then(response => response.json())
+        .then(data => {
+            console.log('Response from server:', data);
+            if (data.result === "success") {
+                alert('Gracias por confirmar tu asistencia!');
+                document.getElementById('rsvpForm').reset();
+            } else {
+                alert('Hubo un problema: ' + (data.message || 'Error desconocido.'));
+            }
+        })
+        .catch(error => {
+            console.error('Fetch Error:', error);
+            alert('Hubo un error al enviar tus datos.');
+        });
 });
 
 // WhatsApp Button Action
