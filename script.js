@@ -41,21 +41,21 @@ document.getElementById('submit').addEventListener('click', function (event) {
     }
 
     // Google Apps Script Web App URL
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzCLu8m-jnTIjpros4XaG4Z1gjb9Oi5eroFP6OMqCeVZiUNaA8VhuzemneBVroQt-bvbA/exec';
-
+    const scriptURL = "https://script.google.com/macros/s/AKfycbyGzlANAFRmsIu1Vm3tnVJfVtC28Oe1BBTv1utN9z8xoqQf9IPtqMSZPa_Ke4cW9RdEOA/exec"
     // Send the data to the Google Apps Script via POST
     fetch(scriptURL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: name, phone: phone })
     })
-    .then(response => response.json()) // Parse the JSON response
+    .then(response => response.json())
     .then(data => {
+        console.log('Response from server:', data); // For debugging
         if (data.result === "success") {
             alert('Gracias por confirmar tu asistencia!');
-            document.getElementById('rsvpForm').reset(); // Reset the form after submission
+            document.getElementById('rsvpForm').reset();
         } else {
-            alert('Hubo un problema: ' + data.message);
+            alert('Hubo un problema: ' + (data.message || 'Error desconocido.'));
         }
     })
     .catch(error => {
