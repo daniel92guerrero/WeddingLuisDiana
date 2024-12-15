@@ -4,15 +4,15 @@ console.log("JavaScript file loaded");
 //     alert("Thank you for confirming your attendance! We look forward to celebrating with you!");
 // }
 
-function submitNote() {
-    const note = document.getElementById("wedding-note-box").value;
-    if (note.trim()) {
-        alert("Gracias por tu mensaje: " + note);
-        document.getElementById("wedding-note-box").value = ""; // Clear the box
-    } else {
-        alert("Por favor escribe un mensaje antes de enviarlo.");
-    }
-}
+// function submitNote() {
+//     const note = document.getElementById("wedding-note-box").value;
+//     if (note.trim()) {
+//         alert("Gracias por tu mensaje: " + note);
+//         document.getElementById("wedding-note-box").value = ""; // Clear the box
+//     } else {
+//         alert("Por favor escribe un mensaje antes de enviarlo.");
+//     }
+// }
 
 // function sendRSVP() {
 //     const name = document.getElementById("rsvp-name").value.trim();
