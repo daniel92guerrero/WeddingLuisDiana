@@ -26,8 +26,7 @@ console.log("JavaScript file loaded");
 //     }
 // }
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbydoS00tmFSDQK0Oo0_6kZJjt17Zm5aR-js1cmjzL9kiKaUPEnxFYZTpR5B1IsWrkSOgQ/exec';
-
+const scriptURL = 'https://script.google.com/macros/s/AKfycbzhNFX1Zs8hOCMxJUI0kc-ZA34ZttDLUhC8W5wEnm-paHtE4L12TQPIJyU0ycOVEYuS/exec'
 document.getElementById('submit').addEventListener('click', function (event) {
     event.preventDefault();
 
