@@ -45,11 +45,10 @@ document.getElementById('submit').addEventListener('click', function (event) {
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ name, phone }),
+        body: JSON.stringify({ name: name, phone: phone }),
     })
         .then(response => response.json())
         .then(data => {
-            console.log('Response from server:', data);
             if (data.result === "success") {
                 alert('Gracias por confirmar tu asistencia!');
                 document.getElementById('rsvpForm').reset();
