@@ -25,14 +25,16 @@ console.log("JavaScript file loaded");
 //         alert("Por favor completa ambos campos antes de confirmar.");
 //     }
 // }
+const firebaseURL = 'https://weddingrsvp-1004-default-rtdb.firebaseio.com/attendees.json';
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwMYhIy_5OfDzB3eM-G-iq3qw2fpOrZvRDVwxAVEMl1budiCYLS2YE6kCS1I3VasQij/exec'
 document.getElementById('submit').addEventListener('click', function (event) {
     event.preventDefault();
 
+    // Get input values from the form
     const name = document.getElementById('name').value.trim();
     const phone = document.getElementById('phone').value.trim();
 
+    // Validate inputs
     if (!name || !phone) {
         alert("Por favor completa todos los campos.");
         return;
@@ -40,21 +42,26 @@ document.getElementById('submit').addEventListener('click', function (event) {
 
     console.log('Sending data:', { name, phone });
 
-    fetch(scriptURL, {
+    // Send the data to Firebase
+    fetch(firebaseURL, {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ name: name, phone: phone }),
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            name: name,
+            phone: phone,
+            date: new Date().toISOString(), // Add a timestamp for reference
+        }),
     })
-        .then(response => response.json())
-        .then(data => {
-            if (data.result === "success") {
-                alert('Gracias por confirmar tu asistencia!');
-                document.getElementById('rsvpForm').reset();
-            } else {
-                alert('Hubo un problema: ' + (data.message || 'Error desconocido.'));
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to send data');
             }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Response:', data);
+            alert('Gracias por confirmar tu asistencia!');
+            document.getElementById('rsvpForm').reset(); // Reset the form after submission
         })
         .catch(error => {
             console.error('Fetch Error:', error);
