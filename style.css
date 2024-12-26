@@ -242,6 +242,7 @@ section img {
 
 /* Button Styling */
 #rsvp button,
+#amazon-button,
 #whatsapp-button {
     padding: 12px 24px;
     font-size: 1em;
@@ -257,6 +258,7 @@ section img {
 
 /* Button Hover Effects */
 #rsvp button:hover,
+#amazon-button,
 #whatsapp-button:hover {
     background-color: #218838;
 }

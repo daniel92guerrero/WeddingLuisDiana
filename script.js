@@ -69,17 +69,23 @@ document.getElementById('submit').addEventListener('click', function (event) {
         });
 });
 
-// // WhatsApp Button Action
-// document.getElementById('whatsapp-button').addEventListener('click', function () {
-//     const name = document.getElementById('name')?.value.trim() || "Invitado";
-//     const phoneNumber = "+16027024416"; // Replace with your Wedding Planner's WhatsApp number
-//     const message = `Hola! Confirmo mi asistencia al evento. Mi nombre es ${name}.`;
+// WhatsApp Button Action
+document.getElementById('whatsapp-button').addEventListener('click', function () {
+    const name = document.getElementById('name')?.value.trim() || "Invitado";
+    const phoneNumber = "+16027024416"; // Replace with your Wedding Planner's WhatsApp number
+    const message = `Hola! Confirmo mi asistencia al evento. Mi nombre es ${name}.`;
 
-//     // WhatsApp URL
-//     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-//     window.open(whatsappURL, '_blank'); // Open WhatsApp in a new tab
-// });
+    // WhatsApp URL
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, '_blank'); // Open WhatsApp in a new tab
+});
 
+// Amazon Button Action
+document.getElementById('amazon-button').addEventListener('click', function () {
+    // amazonURL 
+    const amazonURL = `https://www.amazon.com/wedding/share/diana-luis2025`;
+    window.open(amazonURL, '_blank'); // Open WhatsApp in a new tab
+});
 
 // Countdown
 
