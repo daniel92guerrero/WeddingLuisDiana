@@ -103,7 +103,7 @@ function startCountdown() {
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
         document.getElementById("time-remaining").innerHTML = `
-            ${days} Dias ${hours} Horas ${minutes} Minutos ${seconds} Segundos
+            ${days} Días ${hours} Horas ${minutes} Minutos ${seconds} Segundos
         `;
 
         if (timeRemaining < 0) {
