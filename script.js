@@ -72,7 +72,7 @@ document.getElementById('submit').addEventListener('click', function (event) {
 // WhatsApp Button Action
 document.getElementById('whatsapp-button').addEventListener('click', function () {
     const name = document.getElementById('name')?.value.trim() || "";
-    const phoneNumber = "+14808532660"; // Replace with your Wedding Planner's WhatsApp number
+    const phoneNumber = "+14808432660"; // Replace with your Wedding Planner's WhatsApp number
     const message = `Hola! Confirmo mi asistencia al evento. Mi nombre es ${name}.`;
 
     // WhatsApp URL
