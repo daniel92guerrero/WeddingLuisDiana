@@ -91,7 +91,7 @@ document.getElementById('amazon-button').addEventListener('click', function () {
 
 function startCountdown() {
     console.log("Countdown function initiated");
-    const eventDate = new Date("October 4, 2025 17:00:00").getTime();
+    const eventDate = new Date("March 27, 2025 17:00:00").getTime();
 
     const countdownInterval = setInterval(() => {
         const now = new Date().getTime();
